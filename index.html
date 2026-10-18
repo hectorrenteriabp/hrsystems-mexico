@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HIRO · Sistemas de control para negocios | HR Systems México</title>
+<meta name="description" content="HIRO, de HR Systems México: sistemas de control (ERP) y tiendas en línea para pequeños negocios. Ventas, deudas, inventario y gastos en un solo lugar, desde tu celular.">
+<meta name="theme-color" content="#0e1a2a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f2a60c'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%230e1a2a'%3EH%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --marino:#0e1a2a; --marino-2:#1a2d49; --ambar:#f2a60c; --crema:#fff4dd;
+    --fondo:#f6f9fb; --blanco:#ffffff; --texto:#1b2633; --gris:#5c6877; --linea:#e3e8ee;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--fondo);color:var(--texto);
+    font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .cont{max-width:1040px;margin:0 auto;padding:0 20px}
+  .ceja{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c9860a}
+  h1,h2,h3{line-height:1.15;margin:0;text-wrap:balance}
+  h2{font-size:clamp(26px,4vw,34px);margin-top:8px}
+  section{padding:64px 0}
+  .logo{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:20px;text-decoration:none}
+  .logo i{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--ambar);color:var(--marino);font-style:normal;font-size:18px}
+  header.barra{background:var(--marino);color:#fff}
+  header.barra .cont{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+  header.barra nav a{font-size:14px;font-weight:600;text-decoration:none;opacity:.85;margin-left:18px}
+  header.barra nav a:hover{opacity:1}
+  .portada{background:linear-gradient(160deg,var(--marino) 0%,var(--marino-2) 100%);color:#fff;padding:72px 0 84px}
+  .portada h1{font-size:clamp(40px,7vw,64px);max-width:12ch}
+  .portada p{font-size:19px;color:#c9d3df;max-width:52ch;margin:20px 0 32px}
+  .boton{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;border-radius:10px;
+    font-weight:700;text-decoration:none;font-size:16px}
+  .boton-ambar{background:var(--ambar);color:var(--marino)}
+  .boton-ambar:hover{background:#ffb81f}
+  .boton-borde{border:1px solid rgba(255,255,255,.35);color:#fff;margin-left:10px}
+  .rejilla{display:grid;gap:16px}
+  @media(min-width:720px){.r2{grid-template-columns:1fr 1fr}.r4{grid-template-columns:repeat(4,1fr)}.r3{grid-template-columns:repeat(3,1fr)}}
+  .tarjeta{background:var(--blanco);border:1px solid var(--linea);border-radius:14px;padding:22px}
+  .num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--crema);color:#b57805;font-weight:700;font-size:14px;margin-bottom:10px}
+  .aviso{background:var(--crema);border-radius:12px;padding:16px 20px;text-align:center;font-weight:600;color:#8a5a00;margin-top:18px}
+  .cita{background:var(--marino);color:#fff;border-radius:14px;padding:28px;font-size:20px;font-weight:600;margin-top:28px}
+  ul.puntos{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+  @media(min-width:720px){ul.puntos{grid-template-columns:1fr 1fr}}
+  ul.puntos li{display:flex;gap:10px;align-items:baseline}
+  ul.puntos li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ambar);flex:none;transform:translateY(-2px)}
+  .precio{font-size:44px;font-weight:700;color:var(--marino);margin:6px 0}
+  .precio small{font-size:16px;color:var(--gris);font-weight:600}
+  .gris{color:var(--gris)}
+  .oscuro{background:var(--marino);color:#fff}
+  .oscuro .tarjeta{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
+  .oscuro .gris{color:#b9c4d1}
+  details{border-bottom:1px solid var(--linea);padding:16px 0}
+  summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+  summary::after{content:"+";color:var(--ambar);font-size:22px;line-height:1}
+  details[open] summary::after{content:"−"}
+  .legal h3{font-size:18px;margin:26px 0 6px}
+  .legal p,.legal li{color:#3a4654;font-size:15px}
+  footer{background:var(--marino);color:#9fb0c3;font-size:14px;padding:28px 0}
+  footer .cont{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
+  @media(max-width:520px){.boton-borde{margin:10px 0 0}.portada .botones{display:flex;flex-direction:column}header.barra nav{display:none}}
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <div class="cont">
+    <a class="logo" href="#"><i>H</i> HIRO</a>
+    <nav aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#precio">Precio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="portada">
+    <div class="cont">
+      <p class="ceja" style="color:var(--ambar);margin:0 0 14px">HIRO · Sistemas de control para negocios</p>
+      <h1>Tu negocio, bajo control.</h1>
+      <p>Ventas, deudas, inventario y gastos en un solo lugar. Desde tu celular. Y si vendes en internet, tu tienda en línea con cobro por tarjeta y OXXO.</p>
+      <div class="botones">
+        <a class="boton boton-ambar" href="https://wa.me/523332338229?text=Hola%2C%20quiero%20agendar%20una%20demostraci%C3%B3n%20de%20HIRO">Agenda tu demostración gratuita</a>
+        <a class="boton boton-borde" href="#precio">Ver precio</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cont">
+      <p class="ceja">Empecemos por aquí</p>
+      <h2>Cuatro preguntas rápidas</h2>
+      <div class="rejilla r2" style="margin-top:24px">
+        <div class="tarjeta"><span class="num">01</span><h3>¿Cuánto vendiste ayer?</h3></div>
+        <div class="tarjeta"><span class="num">02</span><h3>¿Quién te debe dinero y desde cuándo?</h3></div>
+        <div class="tarjeta"><span class="num">03</span><h3>¿Cuánto te queda de tu producto más vendido?</h3></div>
+        <div class="tarjeta"><span class="num">04</span><h3>Este mes, ¿ganaste o perdiste?</h3></div>
+      </div>
+      <p class="aviso">Si tardas más de un minuto en contestar, esto es para ti.</p>
+      <p class="cita">“Es como tener a un contador, un almacenista y un cobrador trabajando para ti, dentro de tu celular.”</p>
+    </div>
+  </section>
+
+  <section id="servicios" style="background:var(--blanco)">
+    <div class="cont">
+      <p class="ceja">Servicios</p>
+      <h2>Lo que hacemos</h2>
+      <div class="rejilla r2" style="margin-top:24px">
+        <div class="tarjeta">
+          <h3>Sistema de control (ERP)</h3>
+          <p class="gris">Un sistema hecho a la medida de tu negocio, en la nube y desde el celular. Cada negocio usa lo que necesita: no pagas de más por lo que no ocupas.</p>
+          <ul class="puntos" style="grid-template-columns:1fr">
+            <li>Ventas y pedidos</li><li>Clientes y lo que te deben</li><li>Inventario</li><li>Compras y proveedores</li>
+            <li>Gastos</li><li>Producción</li><li>Reportes y utilidad</li><li>Facturación SAT</li>
+          </ul>
+        </div>
+        <div class="tarjeta">
+          <h3>Tiendas en línea y cobros</h3>
+          <p class="gris">Páginas para vender tus productos, servicios o cursos en internet, conectadas a tu sistema de control.</p>
+          <ul class="puntos" style="grid-template-columns:1fr">
+            <li>Cobro con tarjeta de crédito, débito y en efectivo en OXXO</li>
+            <li>Los pagos los procesa Stripe y el dinero llega directo a la cuenta bancaria de tu negocio</li>
+            <li>Cada venta aparece sola en tu sistema</li>
+            <li>Acceso automático para productos digitales, como cursos en video</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="precio" class="oscuro">
+    <div class="cont">
+      <p class="ceja" style="color:var(--ambar)">Inversión</p>
+      <h2>El precio, sin letras chiquitas</h2>
+      <div class="rejilla r2" style="margin-top:24px">
+        <div class="tarjeta">
+          <p class="ceja" style="color:#c9d3df">Implementación</p>
+          <p class="precio" style="color:#fff">$3,000 <small style="color:#b9c4d1">MXN · una sola vez</small></p>
+          <p class="gris">Configuración con tus productos, clientes y precios. Carga de tu información. Puesta en marcha.</p>
+        </div>
+        <div class="tarjeta">
+          <p class="ceja" style="color:#c9d3df">Mensualidad</p>
+          <p class="precio" style="color:#fff">$2,200 <small style="color:#b9c4d1">MXN · cada mes</small></p>
+          <p class="gris">Sistema completo sin límite de uso. Respaldo diario. Soporte por WhatsApp. Actualizaciones incluidas. Sin contrato forzoso.</p>
+        </div>
+      </div>
+      <p class="gris" style="margin-top:18px">Precio del sistema de control. Las tiendas en línea se cotizan según cada proyecto.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="cont">
+      <p class="ceja">Puesta en marcha</p>
+      <h2>En 7 días hábiles estás operando</h2>
+      <div class="rejilla r4" style="margin-top:24px">
+        <div class="tarjeta"><span class="num">1</span><h3>Levantamiento</h3><p class="gris">Días 1 y 2. Vemos cómo trabajas y qué necesitas controlar.</p></div>
+        <div class="tarjeta"><span class="num">2</span><h3>Configuración</h3><p class="gris">Días 3 y 4. Dejamos el sistema listo con lo tuyo.</p></div>
+        <div class="tarjeta"><span class="num">3</span><h3>Carga de datos</h3><p class="gris">Días 5 y 6. Subimos tu información. Tú no capturas nada.</p></div>
+        <div class="tarjeta"><span class="num">4</span><h3>Arranque</h3><p class="gris">Día 7. Te enseñamos y empiezas a operar ese día.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--blanco)">
+    <div class="cont" style="max-width:760px">
+      <p class="ceja">Dudas frecuentes</p>
+      <h2>Lo que más nos preguntan</h2>
+      <div style="margin-top:18px">
+        <details><summary>“Yo no sé usar computadora.”</summary><p class="gris">Si sabes usar WhatsApp, sabes usar esto. El día del arranque te enseñamos.</p></details>
+        <details><summary>“¿Y si se pierde mi información?”</summary><p class="gris">Se respalda sola todos los días y vive en la nube, no en una computadora.</p></details>
+        <details><summary>“¿Y si después me quiero salir?”</summary><p class="gris">Cancelas cuando quieras y te entregamos toda tu información.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="oscuro">
+    <div class="cont">
+      <p class="ceja" style="color:var(--ambar)">Contacto</p>
+      <h2>Agenda tu demostración gratuita</h2>
+      <p class="gris" style="max-width:52ch">Veinte minutos, en tu negocio o por videollamada.</p>
+      <div class="rejilla r3" style="margin-top:22px">
+        <div class="tarjeta"><p class="ceja" style="color:#c9d3df">WhatsApp</p><p style="font-size:18px;font-weight:700;margin:6px 0 0"><a href="https://wa.me/523332338229">33 3233 8229</a></p></div>
+        <div class="tarjeta"><p class="ceja" style="color:#c9d3df">Correo</p><p style="font-size:18px;font-weight:700;margin:6px 0 0;word-break:break-all"><a href="mailto:hectorrenteria.flex@gmail.com">hectorrenteria.flex@gmail.com</a></p></div>
+        <div class="tarjeta"><p class="ceja" style="color:#c9d3df">Atendemos</p><p style="font-size:18px;font-weight:700;margin:6px 0 0">Toda la República Mexicana</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="legal" id="terminos">
+    <div class="cont" style="max-width:760px">
+      <p class="ceja">Términos</p>
+      <h2>Términos del servicio</h2>
+      <h3>Qué contratas</h3>
+      <p>HIRO es un servicio de HR Systems México. Ofrecemos sistemas de control para negocios y tiendas en línea, que se entregan configurados para cada cliente y se usan desde el navegador o el celular.</p>
+      <h3>Pagos</h3>
+      <p>La implementación se paga una sola vez al arrancar. La mensualidad se paga por adelantado cada mes. Los precios están en pesos mexicanos.</p>
+      <h3>Cancelación</h3>
+      <p>No hay contrato forzoso. Puedes cancelar cuando quieras avisando por WhatsApp o correo; el servicio sigue activo hasta el final del mes pagado y te entregamos toda tu información.</p>
+      <h3>Aclaraciones y devoluciones</h3>
+      <p>Si un cobro no corresponde, escríbenos por WhatsApp o correo y lo aclaramos en un máximo de 5 días hábiles. Si procede, el dinero se devuelve por el mismo medio de pago.</p>
+      <h3>Cobros en tiendas en línea</h3>
+      <p>En las tiendas en línea que desarrollamos, los pagos los procesa Stripe directamente en la cuenta de cada negocio. Cada negocio es responsable de sus productos, sus precios y la atención a sus propios clientes.</p>
+    </div>
+  </section>
+
+  <section class="legal" id="privacidad" style="background:var(--blanco)">
+    <div class="cont" style="max-width:760px">
+      <p class="ceja">Privacidad</p>
+      <h2>Aviso de privacidad</h2>
+      <p>Héctor Rentería, que opera como HR Systems México (HIRO), es responsable del tratamiento de tus datos personales.</p>
+      <h3>Datos que recabamos</h3>
+      <p>Nombre, teléfono, correo electrónico y la información de tu negocio necesaria para configurar el sistema.</p>
+      <h3>Para qué los usamos</h3>
+      <p>Para darte el servicio contratado, contactarte, darte soporte y emitir tus facturas. No vendemos tus datos ni los compartimos para publicidad.</p>
+      <h3>Con quién los compartimos</h3>
+      <p>Solo con los proveedores que hacen funcionar el servicio, como el alojamiento en la nube, la base de datos y el procesador de pagos.</p>
+      <h3>Tus derechos</h3>
+      <p>Puedes pedir acceso, rectificación, cancelación u oposición al uso de tus datos (derechos ARCO) escribiendo a <a href="mailto:hectorrenteria.flex@gmail.com">hectorrenteria.flex@gmail.com</a>. Te respondemos en un máximo de 20 días hábiles.</p>
+      <p class="gris" style="font-size:13px;margin-top:22px">Última actualización: octubre de 2026.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="cont">
+    <span>© 2026 HR Systems México · HIRO, sistemas de control para negocios</span>
+    <span><a href="#terminos">Términos</a> · <a href="#privacidad">Aviso de privacidad</a> · <a href="#contacto">Contacto</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
